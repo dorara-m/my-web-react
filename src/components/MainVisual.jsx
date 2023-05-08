@@ -1,6 +1,8 @@
+import { mq } from "../styles/functions";
 import { css } from "@emotion/react";
 
 export default function MainVisual() {
+  // css
   const mv = css`
     position: relative;
     line-height: 1;
@@ -13,8 +15,8 @@ export default function MainVisual() {
     transform: translate(-50%, -50%);
     text-align: center;
     h1 {
-      font-size: 6rem;
-      @include mq() {
+      font-size: 4.6rem;
+      ${mq("md")} {
         font-size: 9rem;
       }
       background-size: 200% 100%;
@@ -51,13 +53,14 @@ export default function MainVisual() {
     }
 
     p {
-      margin-top: 1.5rem;
+      margin-top: 1rem;
       font-size: 1.6rem;
-      @include mq() {
+      ${mq("md")} {
         font-size: 2rem;
       }
     }
   `;
+
   return (
     <>
       <div css={mv}>
