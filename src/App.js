@@ -4,6 +4,7 @@ import { css } from "@emotion/react";
 import MainVisual from "./components/MainVisual";
 import Works from "./components/Works";
 import Profile from "./components/Profile";
+import Skills from "./components/Skills";
 import Heading2 from "./components/Heading2";
 
 const globalStyle = css`
@@ -40,6 +41,12 @@ function App() {
         <div css={innerStyle}>
           <Heading2 text="Hello. I'm …" />
           <Profile />
+        </div>
+      </section>
+      <section css={sectionStyle}>
+        <div css={innerStyle}>
+          <Heading2 text="Skills" />
+          <Skills />
         </div>
       </section>
     </div>
