@@ -4,10 +4,11 @@ import { css } from "@emotion/react";
 export default function Heading2(props) {
   // css
   const h2 = css`
-    font-size: 4.5rem;
+    font-size: 45px;
     line-height: 1;
     text-align: center;
     margin-bottom: 2rem;
+    font-weight: bold;
   `;
 
   return (

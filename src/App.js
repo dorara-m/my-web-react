@@ -10,7 +10,6 @@ import Heading2 from "./components/Heading2";
 
 const globalStyle = css`
   font-family: "Ubuntu", sans-serif;
-  /* たぶん読めてない↑？ */
   font-size: 16px;
   line-height: 2;
   color: #333;
@@ -18,7 +17,7 @@ const globalStyle = css`
 `;
 const sectionStyle = css`
   padding: 10rem 0 15rem;
-  &:nth-child(even) {
+  &:nth-of-type(even) {
     background-color: #ebebeb;
   }
 `;

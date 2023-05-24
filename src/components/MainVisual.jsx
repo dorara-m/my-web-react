@@ -16,8 +16,9 @@ export default function MainVisual() {
     text-align: center;
     h1 {
       font-size: 4.6rem;
+      font-weight: bold;
       ${mq("md")} {
-        font-size: 9rem;
+        font-size: 7rem;
       }
       background-size: 200% 100%;
       background-position-x: 100%;
