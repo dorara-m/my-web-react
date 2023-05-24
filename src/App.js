@@ -5,10 +5,12 @@ import MainVisual from "./components/MainVisual";
 import Works from "./components/Works";
 import Profile from "./components/Profile";
 import Skills from "./components/Skills";
+import ReleaseNotes from "./components/ReleaseNotes";
 import Heading2 from "./components/Heading2";
 
 const globalStyle = css`
   font-family: "Ubuntu", sans-serif;
+  /* たぶん読めてない↑？ */
   font-size: 16px;
   line-height: 2;
   color: #333;
@@ -47,6 +49,12 @@ function App() {
         <div css={innerStyle}>
           <Heading2 text="Skills" />
           <Skills />
+        </div>
+      </section>
+      <section css={sectionStyle}>
+        <div css={innerStyle}>
+          <Heading2 text="Release notes" />
+          <ReleaseNotes />
         </div>
       </section>
     </div>
