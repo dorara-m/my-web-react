@@ -15,10 +15,10 @@ export default function MainVisual() {
     transform: translate(-50%, -50%);
     text-align: center;
     h1 {
-      font-size: 4.6rem;
+      font-size: 3.8rem;
       font-weight: bold;
       ${mq("md")} {
-        font-size: 7rem;
+        font-size: 5.6rem;
       }
       background-size: 200% 100%;
       background-position-x: 100%;
@@ -54,10 +54,10 @@ export default function MainVisual() {
     }
 
     p {
-      margin-top: 1rem;
-      font-size: 1.6rem;
+      margin-top: 0.8rem;
+      font-size: 1rem;
       ${mq("md")} {
-        font-size: 2rem;
+        font-size: 1.3rem;
       }
     }
   `;

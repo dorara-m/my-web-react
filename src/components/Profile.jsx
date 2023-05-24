@@ -25,6 +25,9 @@ export default function MainVisual() {
         text-decoration: underline;
       }
     }
+    strong {
+      font-weight: bold;
+    }
     span {
       font-size: 13px;
     }
@@ -35,7 +38,7 @@ export default function MainVisual() {
       <div css={profileStyle}>
         <img src="me.png" alt="雨東風ぬめちゃ" />
         <p>
-          堂寺志門（どうてらしもん）
+          <strong>堂寺志門（どうてらしもん）</strong>
           <br />
           <span>≒ 雨東風ぬめちゃ</span>
         </p>

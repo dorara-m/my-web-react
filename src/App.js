@@ -7,6 +7,7 @@ import Profile from "./components/Profile";
 import Skills from "./components/Skills";
 import ReleaseNotes from "./components/ReleaseNotes";
 import Heading2 from "./components/Heading2";
+import Footer from "./components/Footer";
 
 const globalStyle = css`
   font-family: "Ubuntu", sans-serif;
@@ -16,8 +17,8 @@ const globalStyle = css`
   letter-spacing: 0.02em;
 `;
 const sectionStyle = css`
-  padding: 10rem 0 15rem;
-  &:nth-of-type(even) {
+  padding: 5rem 0 10rem;
+  &:nth-of-type(odd) {
     background-color: #ebebeb;
   }
 `;
@@ -56,6 +57,7 @@ function App() {
           <ReleaseNotes />
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

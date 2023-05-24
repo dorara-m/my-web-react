@@ -63,6 +63,7 @@ export default function MainVisual() {
     },
     {
       text: "Next",
+      inProgress: true,
     },
     {
       text: "gulp",

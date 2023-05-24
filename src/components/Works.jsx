@@ -3,8 +3,8 @@ import { css } from "@emotion/react";
 
 export default function MainVisual() {
   const worksStyle = css`
-    // worksの不足分200px飛び出ているので
-    padding-bottom: 2rem;
+    // worksが飛び出ているので
+    margin-bottom: -100px;
     ul {
       width: 300px;
       margin: 0 auto;

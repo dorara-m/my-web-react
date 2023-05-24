@@ -62,7 +62,7 @@ export default function MainVisual() {
     {
       date: "2022.11.06",
       version: "4",
-      text: "開発を開始しました。",
+      text: "ver.4の開発を開始しました。",
     },
   ];
 
