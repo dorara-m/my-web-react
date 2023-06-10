@@ -1,4 +1,5 @@
 import "./styles/reset.scss";
+import "./styles/global.scss";
 import { css } from "@emotion/react";
 
 import MainVisual from "./components/MainVisual";
@@ -9,13 +10,6 @@ import ReleaseNotes from "./components/ReleaseNotes";
 import Heading2 from "./components/Heading2";
 import Footer from "./components/Footer";
 
-const globalStyle = css`
-  font-family: "Ubuntu", sans-serif;
-  font-size: 16px;
-  line-height: 2;
-  color: #333;
-  letter-spacing: 0.02em;
-`;
 const sectionStyle = css`
   padding: 5rem 0 10rem;
   &:nth-of-type(odd) {
@@ -30,7 +24,7 @@ const innerStyle = css`
 
 function App() {
   return (
-    <div css={globalStyle}>
+    <div className="app">
       <MainVisual />
       {/* ここのsection繰り返しをもっとうまく書けないか?v-html的なのはreactと相性悪いか？ */}
       <section css={sectionStyle}>
