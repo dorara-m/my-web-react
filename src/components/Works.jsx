@@ -44,15 +44,17 @@ export default function MainVisual() {
           transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
           width: 100%;
           height: 100%;
-          background: rgba(0, 0, 0, 0.5);
+          background: rgba(0, 0, 0, 0.8);
           position: absolute;
         }
-        &:hover {
-          &::after {
-            opacity: 1;
-          }
-          span {
-            opacity: 1;
+        ${mq("md")} {
+          &:hover {
+            &::after {
+              opacity: 1;
+            }
+            span {
+              opacity: 1;
+            }
           }
         }
       }
@@ -74,7 +76,7 @@ export default function MainVisual() {
         transform: translate(-50%, -50%);
         color: #fff;
         text-align: center;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: bold;
         opacity: 0;
         transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);

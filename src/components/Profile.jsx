@@ -3,11 +3,34 @@ import { css } from "@emotion/react";
 
 export default function MainVisual() {
   const profileStyle = css`
-    text-align: center;
-
     img {
-      width: 200px;
-      margin-bottom: 30px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 150px;
+      ${mq("md")} {
+        width: 250px;
+      }
+    }
+    .textArea {
+      margin-top: 48px;
+      font-size: 14px;
+      ${mq("md")} {
+        font-size: 16px;
+      }
+    }
+    .name {
+      text-align: center;
+      margin-bottom: 20px;
+      line-height: 1;
+      .main {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .sub {
+        margin-top: 10px;
+        font-size: 14px;
+      }
     }
     p {
       text-align: left;
@@ -20,16 +43,10 @@ export default function MainVisual() {
     }
     a {
       color: rgb(135, 167, 235);
-      font-weight: bold;
+      font-weight: 500;
       &:hover {
         text-decoration: underline;
       }
-    }
-    strong {
-      font-weight: bold;
-    }
-    span {
-      font-size: 13px;
     }
   `;
 
@@ -37,34 +54,35 @@ export default function MainVisual() {
     <>
       <div css={profileStyle}>
         <img src="me.png" alt="雨東風ぬめちゃ" />
-        <p>
-          <strong>堂寺志門（どうてらしもん）</strong>
-          <br />
-          <span>≒ 雨東風ぬめちゃ</span>
-        </p>
-        <p>
-          フロントエンドエンジニアを5年、ゲーム実況を3年やっている人。
-          <br />
-          見習いギタリスト＆イラストレーター＆歌い手。
-          <br />
-          ものづくりが好き。おしゃべりが好き。シュッとしたサイトが好き。
-          <br />
-          社会人5年生(27)♂。
-        </p>
-        <p>
-          ゲーム・アニメ・声優・Vtuber・音楽・ご飯がLove。
-          <br />
-          特技はボイパ。
-        </p>
-        <p>
-          <a
-            href="https://www.youtube.com/channel/UCR5b4PoQ3ainPNFD5bk7enA"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            チャンネル登録おねがいします。まじで。まっっじで
-          </a>
-        </p>
+        <div className="textArea">
+          <div className="name">
+            <div className="main">堂寺 志門（どうてらしもん）</div>
+            <div className="sub">雨東風ぬめちゃ</div>
+          </div>
+          <p>
+            フロントエンドエンジニアを5年、ゲーム実況を3年やっている人。
+            <br />
+            ギター、イラスト、歌を修行中。
+            <br />
+            ものづくりが好き。おしゃべりが好き。シュッとしたサイトが好き。
+            <br />
+            社会人5年生(27)♂。
+          </p>
+          <p>
+            ゲーム・アニメ・声優・Vtuber・音楽・ご飯がLove。
+            <br />
+            特技はボイパ。
+          </p>
+          <p>
+            <a
+              href="https://www.youtube.com/channel/UCR5b4PoQ3ainPNFD5bk7enA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              チャンネル登録お頼み申す…！
+            </a>
+          </p>
+        </div>
       </div>
     </>
   );

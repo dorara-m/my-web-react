@@ -1,6 +1,7 @@
 import "./styles/reset.scss";
 import "./styles/global.scss";
 import { css } from "@emotion/react";
+import { mq } from "./styles/functions";
 
 import MainVisual from "./components/MainVisual";
 import Works from "./components/Works";
@@ -11,9 +12,12 @@ import Heading2 from "./components/Heading2";
 import Footer from "./components/Footer";
 
 const sectionStyle = css`
-  padding: 5rem 0 10rem;
+  padding: 5rem 0;
   &:nth-of-type(odd) {
     background-color: #ebebeb;
+  }
+  ${mq("md")} {
+    padding: 5rem 0 6rem;
   }
 `;
 const innerStyle = css`
