@@ -3,8 +3,7 @@ import { css } from "@emotion/react";
 
 export default function MainVisual() {
   const worksStyle = css`
-    // worksが飛び出ているので
-    margin-bottom: -100px;
+    /* margin-bottom: -100px; */
     ul {
       width: 300px;
       margin: 0 auto;
