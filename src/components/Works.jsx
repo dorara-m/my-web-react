@@ -84,6 +84,11 @@ export default function MainVisual() {
 
   const works1 = [
     {
+      href: "https://day-formatter.vercel.app/",
+      img: "https://i.gyazo.com/9cae7072600b86acb7e1ae69f1ed5913.png",
+      text: "日付を+7日してくれます",
+    },
+    {
       href: "https://vite-react-oshi-matome-zprh.vercel.app/",
       img: "https://i.gyazo.com/3950e84ac6ecfc7379eb92e800211bcb.png",
       text: "推しをまとめろ<br>「Oshi Matome」",
@@ -98,14 +103,14 @@ export default function MainVisual() {
       img: "https://images.microcms-assets.io/assets/e502aee9648f4b008c0ba56f3c8de29d/dd4a09b848b24ff99d0a948c7f18486f/thumb.png",
       text: "ゲームのルールをまとめた<br>「ぼうけんのしょ」",
     },
+  ];
+  // @todo gridのcssを右寄り、左よりの2パターン用意。iが偶数の時と奇数の時で交互にcssがあたるようにする。ulはやめたい。divでwrapしたのが交互にくる。mapがつかえない。2つセットが繰り返せばいい？
+  const works2 = [
     {
       href: "https://hello-koala.netlify.app/",
       img: "https://hello-koala.netlify.app/static/media/my-koala.4a0297a8.jpg",
       text: "コアラが挨拶してくれる<br>「Hello Koala!」",
     },
-  ];
-  // @todo gridのcssを右寄り、左よりの2パターン用意。iが偶数の時と奇数の時で交互にcssがあたるようにする。ulはやめたい。divでwrapしたのが交互にくる。mapがつかえない。2つセットが繰り返せばいい？
-  const works2 = [
     {
       href: "http://softmatter.phys.kindai.ac.jp/",
       img: "http://softmatter.phys.kindai.ac.jp/assets/images/weblogo.png",
