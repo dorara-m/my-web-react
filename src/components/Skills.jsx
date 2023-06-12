@@ -66,6 +66,9 @@ export default function MainVisual() {
       inProgress: true,
     },
     {
+      text: "Astro",
+    },
+    {
       text: "gulp",
     },
     {
@@ -83,7 +86,6 @@ export default function MainVisual() {
     },
     {
       text: "Vercel",
-      inProgress: true,
     },
     {
       text: "FireBase",

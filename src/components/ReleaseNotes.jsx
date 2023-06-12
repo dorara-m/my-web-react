@@ -61,6 +61,11 @@ export default function MainVisual() {
   // githubのコミットまんま反映できたらアチィ
   const notes = [
     {
+      date: "2023.06.12",
+      version: "4.2.1",
+      text: "worksに「Day Formatter」を追加しました。",
+    },
+    {
       date: "2023.05.30",
       version: "4.2.0",
       text: "開発環境をReactに変更しました。",
