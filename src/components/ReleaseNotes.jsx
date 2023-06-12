@@ -5,40 +5,56 @@ const wrap = css`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  ${mq("md")} {
+    gap: 10px;
+  }
 
   li {
     display: grid;
     gap: 5px 10px;
-    grid-template-columns: 80px -webkit-min-content 1fr;
     grid-template-columns: 80px min-content 1fr;
-    grid-template-rows: 1fr -webkit-max-content;
     grid-template-rows: 1fr max-content;
-    grid-template-areas: "time version no" "text text text";
+    grid-template-areas: "time version blank" "text text text";
+    ${mq("md")} {
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "time version text" "blank blank text";
+    }
     time {
       grid-area: time;
       font-weight: bold;
       font-size: 15px;
       line-height: 1;
+      font-family: var(--font-en);
     }
   }
 `;
 const version = css`
   grid-area: version;
-  line-height: 1;
-  padding: 3px 8px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
   border-radius: 10px;
   background-color: lightblue;
   font-size: 12px;
+  font-family: var(--font-en);
+  font-weight: 500;
   transform: translateY(-2px);
-
+  ${mq("md")} {
+    /* transform: translate(0); */
+  }
   &::before {
     content: "ver.";
   }
 `;
 const text = css`
   grid-area: text;
-  font-size: 16px;
   line-height: 1.5;
+  font-size: 14px;
+  ${mq("md")} {
+    font-size: 16px;
+    transform: translateY(-8px);
+  }
 `;
 
 export default function MainVisual() {

@@ -7,6 +7,7 @@ export default function MainVisual() {
     position: relative;
     line-height: 1;
     height: 100vh;
+    font-family: var(--font-en);
   `;
   const center = css`
     position: absolute;
@@ -18,7 +19,7 @@ export default function MainVisual() {
       font-size: 3.8rem;
       font-weight: bold;
       ${mq("md")} {
-        font-size: 5.6rem;
+        font-size: 6rem;
       }
       background-size: 200% 100%;
       background-position-x: 100%;

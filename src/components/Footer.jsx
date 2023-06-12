@@ -5,12 +5,12 @@ export default function Heading2(props) {
   // css
   const footer = css`
     background-color: #000;
-    padding: 3rem 0;
     color: #fff;
     text-align: center;
     font-size: 0.8rem;
+    padding: 2rem 0;
     ${mq("md")} {
-      padding: 4rem 0;
+      padding: 3rem 0;
     }
   `;
 

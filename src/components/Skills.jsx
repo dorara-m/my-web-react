@@ -18,9 +18,9 @@ export default function MainVisual() {
         background-color: #747474;
         text-align: center;
         color: #fff;
-        height: 40px;
-        font-size: 13px;
-        line-height: 1.1;
+        height: 25px;
+        font-size: 11px;
+        line-height: 1;
         ${mq("md")} {
           font-size: 15px;
           height: 30px;
