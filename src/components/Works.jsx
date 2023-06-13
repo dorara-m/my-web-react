@@ -3,50 +3,59 @@ import { css } from "@emotion/react";
 
 export default function MainVisual() {
   const worksStyle = css`
-    /* margin-bottom: -100px; */
     ul {
       width: 300px;
       margin: 0 auto;
-      display: grid;
-      grid-template-columns: 100px 100px 100px;
-      grid-template-rows: 100px 100px;
-      grid-template-areas: "itemB itemA itemA" "itemC itemC itemD";
+      display: flex;
+      flex-wrap: wrap;
       ${mq("md")} {
         width: 600px;
-        grid-template-columns: 200px 200px 200px;
-        grid-template-rows: 200px 200px;
       }
-      li:first-of-type {
-        grid-area: itemA;
+      /* 1,4,5,8,9 */
+      li:first-child {
+        flex-basis: 66.6%;
       }
-      li:nth-of-type(2) {
-        grid-area: itemB;
+      li:nth-child(4n + 1) {
+        flex-basis: 66.6%;
       }
-      li:nth-of-type(3) {
-        grid-area: itemC;
+      li:nth-child(4n) {
+        flex-basis: 66.6%;
       }
-      li:nth-of-type(4) {
-        grid-area: itemD;
+      /* 2,3,6,7,10,11 */
+      li:nth-child(2) {
+        flex-basis: 33.3%;
+      }
+      li:nth-child(4n + 2) {
+        flex-basis: 33.3%;
+      }
+      li:nth-child(3) {
+        flex-basis: 33.3%;
+      }
+      li:nth-child(4n + 3) {
+        flex-basis: 33.3%;
       }
     }
     li {
       a {
+        height: 100px;
         display: block;
-        height: 100%;
         position: relative;
         overflow: hidden;
         background: #fff;
         &::after {
           content: "";
           display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
           opacity: 0;
           transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
           width: 100%;
           height: 100%;
           background: rgba(0, 0, 0, 0.8);
-          position: absolute;
         }
         ${mq("md")} {
+          height: 200px;
           &:hover {
             &::after {
               opacity: 1;
@@ -58,11 +67,8 @@ export default function MainVisual() {
         }
       }
       img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: none;
+        max-width: 100%;
+        object-fit: cover;
         width: auto;
         height: 100%;
       }
@@ -90,6 +96,11 @@ export default function MainVisual() {
       text: "日付を+7日してくれます",
     },
     {
+      href: "https://dorara-m.github.io/yasac/",
+      img: "https://dorara-m.github.io/yasac/assets/images/mv.jpg",
+      text: "やさしい<br>HTML講座<br>公式サイト",
+    },
+    {
       href: "https://vite-react-oshi-matome-zprh.vercel.app/",
       img: "https://i.gyazo.com/3950e84ac6ecfc7379eb92e800211bcb.png",
       text: "推しをまとめろ<br>「Oshi Matome」",
@@ -102,11 +113,8 @@ export default function MainVisual() {
     {
       href: "https://bouken-no-syo.netlify.app/",
       img: "https://images.microcms-assets.io/assets/e502aee9648f4b008c0ba56f3c8de29d/dd4a09b848b24ff99d0a948c7f18486f/thumb.png",
-      text: "ゲームのルールをまとめた<br>「ぼうけんのしょ」",
+      text: "パーティーゲームの<br>ルール解説<br>「ぼうけんのしょ」",
     },
-  ];
-  // @todo gridのcssを右寄り、左よりの2パターン用意。iが偶数の時と奇数の時で交互にcssがあたるようにする。ulはやめたい。divでwrapしたのが交互にくる。mapがつかえない。2つセットが繰り返せばいい？
-  const works2 = [
     {
       href: "https://hello-koala.netlify.app/",
       img: "https://hello-koala.netlify.app/static/media/my-koala.4a0297a8.jpg",
@@ -115,7 +123,7 @@ export default function MainVisual() {
     {
       href: "http://softmatter.phys.kindai.ac.jp/",
       img: "http://softmatter.phys.kindai.ac.jp/assets/images/weblogo.png",
-      text: "父、堂寺知成の個人サイト",
+      text: "父<br>堂寺知成の<br>個人サイト",
     },
     {
       href: "https://dorara-m.github.io/Janken2/",
@@ -129,18 +137,6 @@ export default function MainVisual() {
       <div css={worksStyle}>
         <ul>
           {works1.map((work, i) => {
-            return (
-              <li key={i}>
-                <a href={work.href} target="_blank" rel="noopener noreferrer">
-                  <img src={work.img} alt={work.title} />
-                  <span dangerouslySetInnerHTML={{ __html: work.text }} />
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-        <ul>
-          {works2.map((work, i) => {
             return (
               <li key={i}>
                 <a href={work.href} target="_blank" rel="noopener noreferrer">
