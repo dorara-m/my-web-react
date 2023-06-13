@@ -69,7 +69,7 @@ export default function MainVisual() {
       img {
         max-width: 100%;
         object-fit: cover;
-        width: auto;
+        width: 100%;
         height: 100%;
       }
       span {
@@ -122,7 +122,7 @@ export default function MainVisual() {
     },
     {
       href: "http://softmatter.phys.kindai.ac.jp/",
-      img: "http://softmatter.phys.kindai.ac.jp/assets/images/weblogo.png",
+      img: "logo-tod.png",
       text: "父<br>堂寺知成の<br>個人サイト",
     },
     {
