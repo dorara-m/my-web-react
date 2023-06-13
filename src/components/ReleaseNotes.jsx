@@ -6,7 +6,7 @@ const wrap = css`
   flex-direction: column;
   gap: 20px;
   ${mq("md")} {
-    gap: 10px;
+    gap: 16px;
   }
 
   li {
@@ -16,8 +16,8 @@ const wrap = css`
     grid-template-rows: 1fr max-content;
     grid-template-areas: "time version blank" "text text text";
     ${mq("md")} {
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "time version text" "blank blank text";
+      grid-template-rows: 1fr;
+      grid-template-areas: "time version text";
     }
     time {
       grid-area: time;
@@ -62,12 +62,17 @@ export default function MainVisual() {
   const notes = [
     {
       date: "2023.06.12",
-      version: "4.2.1",
+      version: "4.1.2",
       text: "worksに「Day Formatter」を追加しました。",
     },
     {
+      date: "2023.06.11",
+      version: "4.1.1",
+      text: "worksに「ぬめちゃと学ぶ。やさしいHTML 公式サイト」を追加しました。",
+    },
+    {
       date: "2023.05.30",
-      version: "4.2.0",
+      version: "4.1.0",
       text: "開発環境をReactに変更しました。",
     },
     {
