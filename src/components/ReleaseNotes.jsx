@@ -1,5 +1,6 @@
 import { mq } from "../styles/functions";
 import { css } from "@emotion/react";
+import Section from "./Section";
 
 const wrap = css`
   display: flex;
@@ -94,17 +95,19 @@ export default function MainVisual() {
 
   return (
     <>
-      <ul css={wrap}>
-        {notes.map((note, i) => {
-          return (
-            <li key={i}>
-              <time dateTime={note.date}>{note.date}</time>
-              <div css={version}>{note.version}</div>
-              <div css={text}>{note.text}</div>
-            </li>
-          );
-        })}
-      </ul>
+      <Section heading="Release Notes">
+        <ul css={wrap}>
+          {notes.map((note, i) => {
+            return (
+              <li key={i}>
+                <time dateTime={note.date}>{note.date}</time>
+                <div css={version}>{note.version}</div>
+                <div css={text}>{note.text}</div>
+              </li>
+            );
+          })}
+        </ul>
+      </Section>
     </>
   );
 }

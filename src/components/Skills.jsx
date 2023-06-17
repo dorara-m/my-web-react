@@ -1,5 +1,6 @@
 import { mq } from "../styles/functions";
 import { css } from "@emotion/react";
+import Section from "./Section";
 
 export default function MainVisual() {
   const skillsStyle = css`
@@ -117,15 +118,19 @@ export default function MainVisual() {
 
   return (
     <>
-      <ul css={skillsStyle}>
-        {skills.map((skill, i) => {
-          return (
-            <li key={i}>
-              <span className={skill.inProgress && "-gray"}>{skill.text}</span>
-            </li>
-          );
-        })}
-      </ul>
+      <Section heading="Skill Set" isGray>
+        <ul css={skillsStyle}>
+          {skills.map((skill, i) => {
+            return (
+              <li key={i}>
+                <span className={skill.inProgress && "-gray"}>
+                  {skill.text}
+                </span>
+              </li>
+            );
+          })}
+        </ul>
+      </Section>
     </>
   );
 }

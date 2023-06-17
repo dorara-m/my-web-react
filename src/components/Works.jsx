@@ -1,5 +1,6 @@
 import { mq } from "../styles/functions";
 import { css } from "@emotion/react";
+import Section from "./Section";
 
 export default function MainVisual() {
   const worksStyle = css`
@@ -12,26 +13,26 @@ export default function MainVisual() {
         width: 600px;
       }
       /* 1,4,5,8,9 */
-      li:first-child {
+      li:first-of-type {
         flex-basis: 66.6%;
       }
-      li:nth-child(4n + 1) {
+      li:nth-of-type(4n + 1) {
         flex-basis: 66.6%;
       }
-      li:nth-child(4n) {
+      li:nth-of-type(4n) {
         flex-basis: 66.6%;
       }
       /* 2,3,6,7,10,11 */
-      li:nth-child(2) {
+      li:nth-of-type(2) {
         flex-basis: 33.3%;
       }
-      li:nth-child(4n + 2) {
+      li:nth-of-type(4n + 2) {
         flex-basis: 33.3%;
       }
-      li:nth-child(3) {
+      li:nth-of-type(3) {
         flex-basis: 33.3%;
       }
-      li:nth-child(4n + 3) {
+      li:nth-of-type(4n + 3) {
         flex-basis: 33.3%;
       }
     }
@@ -89,7 +90,7 @@ export default function MainVisual() {
     }
   `;
 
-  const works1 = [
+  const works = [
     {
       href: "https://day-formatter.vercel.app/",
       img: "https://i.gyazo.com/9cae7072600b86acb7e1ae69f1ed5913.png",
@@ -134,20 +135,22 @@ export default function MainVisual() {
 
   return (
     <>
-      <div css={worksStyle}>
-        <ul>
-          {works1.map((work, i) => {
-            return (
-              <li key={i}>
-                <a href={work.href} target="_blank" rel="noopener noreferrer">
-                  <img src={work.img} alt={work.title} />
-                  <span dangerouslySetInnerHTML={{ __html: work.text }} />
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+      <Section heading="Works" isGray>
+        <div css={worksStyle}>
+          <ul>
+            {works.map((work, i) => {
+              return (
+                <li key={i}>
+                  <a href={work.href} target="_blank" rel="noopener noreferrer">
+                    <img src={work.img} alt={work.title} />
+                    <span dangerouslySetInnerHTML={{ __html: work.text }} />
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </Section>
     </>
   );
 }
