@@ -4,7 +4,7 @@ import "./styles/global.scss";
 import MainVisual from "./components/MainVisual";
 import Works from "./components/Works";
 import Profile from "./components/Profile";
-import Skills from "./components/Skills";
+import SkillSet from "./components/SkillSet";
 import ReleaseNotes from "./components/ReleaseNotes";
 import Footer from "./components/Footer";
 
@@ -14,7 +14,7 @@ function App() {
       <MainVisual />
       <Works />
       <Profile />
-      <Skills />
+      <SkillSet />
       <ReleaseNotes />
       <Footer />
     </div>
