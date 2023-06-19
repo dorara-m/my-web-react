@@ -1,7 +1,7 @@
 import "./styles/reset.scss";
 import "./styles/global.scss";
 
-import MainVisual from "./components/MainVisual";
+import MainVisual from "./components/MainVisual/MainVisual";
 import Works from "./components/Works";
 import Profile from "./components/Profile";
 import SkillSet from "./components/SkillSet";
