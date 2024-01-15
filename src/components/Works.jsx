@@ -2,7 +2,7 @@ import { mq } from "../styles/functions";
 import { css } from "@emotion/react";
 import Section from "./Section";
 
-export default function MainVisual() {
+export default function Works() {
   const worksStyle = css`
     ul {
       width: 300px;

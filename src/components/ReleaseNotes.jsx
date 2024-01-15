@@ -58,7 +58,7 @@ const text = css`
   }
 `;
 
-export default function MainVisual() {
+export default function ReleaseNotes() {
   // githubのコミットまんま反映できたらアチィ
   const notes = [
     {

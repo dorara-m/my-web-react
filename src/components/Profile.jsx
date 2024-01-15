@@ -2,7 +2,7 @@ import { mq } from "../styles/functions";
 import { css } from "@emotion/react";
 import Section from "./Section";
 
-export default function MainVisual() {
+export default function Profile() {
   const profileStyle = css`
     img {
       display: block;

@@ -1,7 +1,7 @@
 import { mq } from "../styles/functions";
 import { css } from "@emotion/react";
 
-export default function Heading2(props) {
+export default function Footer(props) {
   // css
   const footer = css`
     background-color: #000;

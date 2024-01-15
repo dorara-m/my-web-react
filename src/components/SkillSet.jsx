@@ -2,7 +2,7 @@ import { mq } from "../styles/functions";
 import { css } from "@emotion/react";
 import Section from "./Section";
 
-export default function MainVisual() {
+export default function SkillSet() {
   const skillsStyle = css`
     font-family: "Menlo", sans-serif;
     max-width: 400px;
