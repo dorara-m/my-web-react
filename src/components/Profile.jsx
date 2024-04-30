@@ -62,13 +62,13 @@ export default function Profile() {
               <div className="sub">雨東風ぬめちゃ</div>
             </div>
             <p>
-              フロントエンドエンジニアを5年、ゲーム実況を3年やっている人。
+              フロントエンドエンジニア片手にVtuberをやっている人。
               <br />
-              ギター、イラスト、歌を修行中。
+              ゲーム実況と弾き語りが好き。隙あらば配信をしている。
               <br />
               ものづくりが好き。おしゃべりが好き。シュッとしたサイトが好き。
               <br />
-              社会人5年生(27)♂。
+              社会人6年生(28)♂。
             </p>
             <p>
               ゲーム・アニメ・声優・Vtuber・音楽・ご飯がLove。
@@ -81,7 +81,7 @@ export default function Profile() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                チャンネル登録お頼み申す…！
+                チャンネル登録だけ、どうかお願いします。
               </a>
             </p>
           </div>

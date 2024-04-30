@@ -17,7 +17,7 @@ export default function Footer(props) {
   return (
     <>
       <footer css={footer}>
-        <p>Created by numecha. @20230503</p>
+        <p>Updated by numecha. @20240420</p>
       </footer>
     </>
   );

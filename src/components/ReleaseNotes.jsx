@@ -62,6 +62,11 @@ export default function ReleaseNotes() {
   // githubのコミットまんま反映できたらアチィ
   const notes = [
     {
+      date: "2024.04.30",
+      version: "4.2",
+      text: "プロフィールを更新しました。",
+    },
+    {
       date: "2023.06.12",
       version: "4.1.2",
       text: "worksに「Day Formatter」を追加しました。",
