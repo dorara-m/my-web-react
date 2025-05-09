@@ -89,16 +89,28 @@ export default function SkillSet() {
       text: "Vercel",
     },
     {
+      text: "Cloudflare",
+      inProgress: true,
+    },
+    {
       text: "FireBase",
+      inProgress: true,
     },
     {
       text: "MicroCMS",
+    },
+    {
+      text: "Figma",
+      inProgress: true,
     },
     {
       text: "Photoshop",
     },
     {
       text: "Premiere Pro",
+    },
+    {
+      text: "After Effects",
     },
     {
       text: "YouTube",
@@ -112,7 +124,6 @@ export default function SkillSet() {
     },
     {
       text: "Guitar",
-      inProgress: true,
     },
   ];
 

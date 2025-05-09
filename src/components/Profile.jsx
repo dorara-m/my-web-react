@@ -64,16 +64,11 @@ export default function Profile() {
             <p>
               フロントエンドエンジニア片手にVtuberをやっている人。
               <br />
-              ゲーム実況と弾き語りが好き。隙あらば配信をしている。
+              ゲームと音楽が好き。
               <br />
-              ものづくりが好き。おしゃべりが好き。シュッとしたサイトが好き。
+              隙あらばYouTube配信をしている。
               <br />
-              社会人6年生(28)♂。
-            </p>
-            <p>
-              ゲーム・アニメ・声優・Vtuber・音楽・ご飯がLove。
-              <br />
-              特技はボイパ。
+              社会人7年生(29)♂。
             </p>
             <p>
               <a
@@ -81,7 +76,7 @@ export default function Profile() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                チャンネル登録だけ、どうかお願いします。
+                チャンネル登録よろしく願いします！！！
               </a>
             </p>
           </div>

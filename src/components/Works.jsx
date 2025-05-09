@@ -92,6 +92,11 @@ export default function Works() {
 
   const works = [
     {
+      href: "https://mornin-fawn.vercel.app/",
+      img: "https://i.gyazo.com/edb490c2b7707cd4ddf58a63da99ee24.png",
+      text: "朝活を記録してレベルアップ！",
+    },
+    {
       href: "https://day-formatter.vercel.app/",
       img: "https://i.gyazo.com/9cae7072600b86acb7e1ae69f1ed5913.png",
       text: "日付を+7日してくれます",

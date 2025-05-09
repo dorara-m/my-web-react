@@ -62,6 +62,11 @@ export default function ReleaseNotes() {
   // githubのコミットまんま反映できたらアチィ
   const notes = [
     {
+      date: "2025.05.09",
+      version: "4.3",
+      text: "プロフィールを更新しました。worksに「朝活アプリ：もーにん」を追加しました。",
+    },
+    {
       date: "2024.04.30",
       version: "4.2",
       text: "プロフィールを更新しました。",
