@@ -22,9 +22,11 @@ export default function SkillSet() {
         height: 25px;
         font-size: 11px;
         line-height: 1;
+        box-sizing: border-box;
         ${mq("md")} {
           font-size: 15px;
-          height: 30px;
+          height: 35px;
+          padding: 6px 0 3px;
         }
         &.-gray {
           background-color: #999;

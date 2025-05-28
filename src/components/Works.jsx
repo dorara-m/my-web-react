@@ -92,13 +92,18 @@ export default function Works() {
 
   const works = [
     {
+      href: "https://amakochi-numecha.vercel.app/",
+      img: "/works/amakochiNumecha.jpg",
+      text: "雨東風ぬめちゃ公式サイト",
+    },
+    {
       href: "https://mornin-fawn.vercel.app/",
-      img: "https://i.gyazo.com/edb490c2b7707cd4ddf58a63da99ee24.png",
-      text: "朝活を記録してレベルアップ！",
+      img: "/works/mornin.png",
+      text: "朝活を記録して<br>レベルアップ！",
     },
     {
       href: "https://day-formatter.vercel.app/",
-      img: "https://i.gyazo.com/9cae7072600b86acb7e1ae69f1ed5913.png",
+      img: "/works/dayFormatter.png",
       text: "日付を+7日してくれます",
     },
     {
@@ -108,17 +113,17 @@ export default function Works() {
     },
     {
       href: "https://vite-react-oshi-matome-zprh.vercel.app/",
-      img: "https://i.gyazo.com/3950e84ac6ecfc7379eb92e800211bcb.png",
+      img: "/works/oshiMatome.png",
       text: "推しをまとめろ<br>「Oshi Matome」",
     },
     {
       href: "https://animatome.netlify.app/",
-      img: "https://images.microcms-assets.io/assets/fc5a67cf51fb4ac3a0eb5f358bf160d6/fb28dbf7337b456e83d631224c9fdb6e/iine.gif",
+      img: "/works/animatome.gif",
       text: "cssアニメがたくさん<br>「アニマトメ」",
     },
     {
       href: "https://bouken-no-syo.netlify.app/",
-      img: "https://images.microcms-assets.io/assets/e502aee9648f4b008c0ba56f3c8de29d/dd4a09b848b24ff99d0a948c7f18486f/thumb.png",
+      img: "/works/boukenNoSyo.png",
       text: "パーティーゲームの<br>ルール解説<br>「ぼうけんのしょ」",
     },
     {
@@ -128,7 +133,7 @@ export default function Works() {
     },
     {
       href: "http://softmatter.phys.kindai.ac.jp/",
-      img: "logo-tod.png",
+      img: "/works/logo-tod.png",
       text: "父<br>堂寺知成の<br>個人サイト",
     },
     {
