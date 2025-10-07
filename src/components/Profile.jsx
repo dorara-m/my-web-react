@@ -62,13 +62,13 @@ export default function Profile() {
               <div className="sub">雨東風ぬめちゃ</div>
             </div>
             <p>
-              フロントエンドエンジニア片手にVtuberをやっている人。
+              フロントエンドエンジニア片手にVTuberをやっている人。
               <br />
               ゲームと音楽が好き。
               <br />
               隙あらばYouTube配信をしている。
               <br />
-              社会人7年生(29)♂。
+              社会人7年生(30)♂。
             </p>
             <p>
               <a

@@ -40,16 +40,19 @@ export default function SkillSet() {
       text: "HTML",
     },
     {
-      text: "CSS",
-    },
-    {
-      text: "JS",
-    },
-    {
       text: "Pug",
     },
     {
+      text: "CSS",
+    },
+    {
       text: "Scss",
+    },
+    {
+      text: "tailwindcss",
+    },
+    {
+      text: "JS",
     },
     {
       text: "jQuery",
@@ -79,7 +82,6 @@ export default function SkillSet() {
     },
     {
       text: "WordPress",
-      inProgress: true,
     },
     {
       text: "MovableType",
@@ -95,15 +97,10 @@ export default function SkillSet() {
       inProgress: true,
     },
     {
-      text: "FireBase",
-      inProgress: true,
-    },
-    {
       text: "MicroCMS",
     },
     {
       text: "Figma",
-      inProgress: true,
     },
     {
       text: "Photoshop",
@@ -123,6 +120,9 @@ export default function SkillSet() {
     {
       text: "Studio One",
       inProgress: true,
+    },
+    {
+      text: "Vocal Percussion",
     },
     {
       text: "Guitar",
