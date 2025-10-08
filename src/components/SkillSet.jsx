@@ -49,7 +49,7 @@ export default function SkillSet() {
       text: "Scss",
     },
     {
-      text: "tailwindcss",
+      text: "Tailwind css",
     },
     {
       text: "JS",
