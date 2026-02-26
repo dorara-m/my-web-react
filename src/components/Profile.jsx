@@ -59,16 +59,13 @@ export default function Profile() {
           <div className="textArea">
             <div className="name">
               <div className="main">堂寺 志門（どうてらしもん）</div>
-              <div className="sub">雨東風ぬめちゃ</div>
             </div>
             <p>
               フロントエンドエンジニア片手にVTuberをやっている人。
               <br />
-              ゲームと音楽が好き。
+              ゲームと音楽とご飯が好き。
               <br />
-              隙あらばYouTube配信をしている。
-              <br />
-              社会人7年生(30)♂。
+              社会人8年生(30)♂。
             </p>
             <p>
               <a
@@ -76,7 +73,7 @@ export default function Profile() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                チャンネル登録よろしく願いします！！！
+                チャンネル登録お待ちしてます
               </a>
             </p>
           </div>

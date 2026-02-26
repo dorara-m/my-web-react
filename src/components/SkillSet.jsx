@@ -100,6 +100,9 @@ export default function SkillSet() {
       text: "MicroCMS",
     },
     {
+      text: "Notion",
+    },
+    {
       text: "Figma",
     },
     {
@@ -110,6 +113,7 @@ export default function SkillSet() {
     },
     {
       text: "After Effects",
+      inProgress: true,
     },
     {
       text: "YouTube",

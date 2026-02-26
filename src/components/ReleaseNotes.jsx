@@ -62,6 +62,11 @@ export default function ReleaseNotes() {
   // githubのコミットまんま反映できたらアチィ
   const notes = [
     {
+      date: "2026.02.26",
+      version: "4.5",
+      text: "プロフィールを更新しました。skill setを更新しました。",
+    },
+    {
       date: "2025.05.28",
       version: "4.4",
       text: "worksに「雨東風ぬめちゃ公式サイト」を追加しました。",

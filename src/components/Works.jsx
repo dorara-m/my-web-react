@@ -93,7 +93,7 @@ export default function Works() {
   const works = [
     {
       href: "https://amakochi-numecha.vercel.app/",
-      img: "/works/amakochiNumecha.jpg",
+      img: "/works/numecha.png",
       text: "雨東風ぬめちゃ公式サイト",
     },
     {
