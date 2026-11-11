@@ -49,6 +49,9 @@ export default function SkillSet() {
       text: "Scss",
     },
     {
+      text: "Emotion",
+    },
+    {
       text: "Tailwind css",
     },
     {
@@ -100,7 +103,19 @@ export default function SkillSet() {
       text: "MicroCMS",
     },
     {
+      text: "Cursor",
+    },
+    {
+      text: "Claude",
+    },
+    {
       text: "Notion",
+    },
+    {
+      text: "Slack",
+    },
+    {
+      text: "Discord",
     },
     {
       text: "Figma",

@@ -72,6 +72,10 @@ export default function Works() {
         object-fit: cover;
         width: 100%;
         height: 100%;
+        /* 解像度の低い画像は拡大せず、元サイズ以下で全体を表示 */
+        &.is-small {
+          object-fit: scale-down;
+        }
       }
       span {
         position: absolute;
@@ -92,8 +96,18 @@ export default function Works() {
 
   const works = [
     {
+      href: "https://8kou-fes.vercel.app/",
+      img: "/works/8kofes.webp",
+      text: "八煌フェス公式サイト",
+    },
+    {
+      href: "https://day-tool.vercel.app/",
+      img: "/works/dayTool.webp",
+      text: "日報作成ツール",
+    },
+    {
       href: "https://amakochi-numecha.vercel.app/",
-      img: "/works/numecha.png",
+      img: "/works/numecha.webp",
       text: "雨東風ぬめちゃ公式サイト",
     },
     {
@@ -104,6 +118,7 @@ export default function Works() {
     {
       href: "https://day-formatter.vercel.app/",
       img: "/works/dayFormatter.png",
+      isSmall: true,
       text: "日付を+7日してくれます",
     },
     {
@@ -119,11 +134,12 @@ export default function Works() {
     {
       href: "https://animatome.netlify.app/",
       img: "/works/animatome.gif",
+      isSmall: true,
       text: "cssアニメがたくさん<br>「アニマトメ」",
     },
     {
       href: "https://bouken-no-syo.netlify.app/",
-      img: "/works/boukenNoSyo.png",
+      img: "/works/boukenNoSyo.webp",
       text: "パーティーゲームの<br>ルール解説<br>「ぼうけんのしょ」",
     },
     {
@@ -134,6 +150,7 @@ export default function Works() {
     {
       href: "http://softmatter.phys.kindai.ac.jp/",
       img: "/works/logo-tod.png",
+      isSmall: true,
       text: "父<br>堂寺知成の<br>個人サイト",
     },
     {
@@ -152,7 +169,10 @@ export default function Works() {
               return (
                 <li key={i}>
                   <a href={work.href} target="_blank" rel="noopener noreferrer">
-                    <img src={work.img} alt={work.text.replace(/<br\s*\/?>/g, " ")} />
+                    <img
+                      src={work.img}
+                      className={work.isSmall ? "is-small" : undefined}
+                      alt={work.text.replace(/<br\s*\/?>/g, " ")} />
                     <span dangerouslySetInnerHTML={{ __html: work.text }} />
                   </a>
                 </li>

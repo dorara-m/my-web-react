@@ -65,7 +65,7 @@ export default function Profile() {
               <br />
               ゲームと音楽とご飯が好き。
               <br />
-              社会人8年生(30)♂。
+              社会人8年生(31)♂。
             </p>
             <p>
               <a

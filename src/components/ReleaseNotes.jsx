@@ -63,6 +63,11 @@ export default function ReleaseNotes() {
   const notes = [
     {
       date: "2026.11.11",
+      version: "4.6",
+      text: "worksに「日報作成ツール」と「八煌フェス公式サイト」を追加しました。その他コンテンツの更新を行いました。",
+    },
+    {
+      date: "2026.11.11",
       version: "4.5.1",
       text: "開発環境のリファクタリング：create react app → viteに変更しました。",
     },
