@@ -1,7 +1,6 @@
 import { css } from "@emotion/react";
 import { mq } from "../styles/functions";
 
-import React from "react";
 import Heading2 from "./Heading2";
 
 const sectionStyle = css`
@@ -21,7 +20,7 @@ const containerStyle = css`
 
 export default function Section(props) {
   return (
-    <section css={sectionStyle} className={props.isGray && "-gray"}>
+    <section css={sectionStyle} className={props.isGray ? "-gray" : undefined}>
       <div css={containerStyle}>
         <Heading2 text={props.heading} />
         {props.children}

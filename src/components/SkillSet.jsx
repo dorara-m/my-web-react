@@ -140,7 +140,7 @@ export default function SkillSet() {
           {skills.map((skill, i) => {
             return (
               <li key={i}>
-                <span className={skill.inProgress && "-gray"}>
+                <span className={skill.inProgress ? "-gray" : undefined}>
                   {skill.text}
                 </span>
               </li>

@@ -2,10 +2,16 @@
 
 ## how to start
 
-npm install
-npm start
+Node.js 20.19 以上が必要です（Vite + React 19）。
 
-npm run build
+```sh
+npm install
+npm start        # 開発サーバー http://localhost:3000
+npm run build    # build/ に出力
+npm run preview  # ビルド結果の確認
+npm test         # Vitest
+npm run lint     # ESLint
+```
 
 ## 更新したら
 

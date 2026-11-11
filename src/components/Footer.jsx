@@ -1,7 +1,7 @@
 import { mq } from "../styles/functions";
 import { css } from "@emotion/react";
 
-export default function Footer(props) {
+export default function Footer() {
   // css
   const footer = css`
     background-color: #000;
@@ -17,7 +17,7 @@ export default function Footer(props) {
   return (
     <>
       <footer css={footer}>
-        <p>Updated by numecha. @20260226</p>
+        <p>Updated by numecha. @20261111</p>
       </footer>
     </>
   );

@@ -152,7 +152,7 @@ export default function Works() {
               return (
                 <li key={i}>
                   <a href={work.href} target="_blank" rel="noopener noreferrer">
-                    <img src={work.img} alt={work.title} />
+                    <img src={work.img} alt={work.text.replace(/<br\s*\/?>/g, " ")} />
                     <span dangerouslySetInnerHTML={{ __html: work.text }} />
                   </a>
                 </li>

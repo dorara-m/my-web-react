@@ -62,6 +62,11 @@ export default function ReleaseNotes() {
   // githubのコミットまんま反映できたらアチィ
   const notes = [
     {
+      date: "2026.11.11",
+      version: "4.5.1",
+      text: "開発環境のリファクタリング：create react app → viteに変更しました。",
+    },
+    {
       date: "2026.02.26",
       version: "4.5",
       text: "プロフィールを更新しました。skill setを更新しました。",
